@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "盈能量",
+  "usingComponents": {
+    "user-header": "../../../components/user-header/user-header"
+  }
+}

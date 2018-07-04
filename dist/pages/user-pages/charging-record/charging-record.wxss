@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/**
+ * 说明:
+ * style-config 文件引用了整个项目所需的 scss 配置文件
+ * 在你的 scss 文件中引用该文件即可使用所有 预设变量、函数、混合宏
+ *
+ * 需要更改配置请到指定 scss 配置模块中修改
+ * 
+ * @Author: Cphayim 
+ * @Date: 2017-10-16 16:35:44 
+ * @Last Modified by: Cphayim
+ * @Last Modified time: 2017-10-16 17:53:26
+ */
+/**
+ * 这里定义项目的所有颜色相关变量
+ *
+ * @Author: Cphayim 
+ * @Date: 2017-10-16 16:34:09 
+ * @Last Modified by: Cphayim
+ * @Last Modified time: 2018-05-04 15:24:18
+ */
+/**
+ * 这里定义项目的所有字体相关变量
+ *
+ * @Author: Cphayim 
+ * @Date: 2017-10-16 16:34:09 
+ * @Last Modified by: wsq
+ * @Last Modified time: 2018-03-27 18:23:45
+ */
+/**
+ * 这里定义项目的所有混合宏
+ * by: Cphayim
+ */
+.header {
+  height: 30px;
+  padding: 0 15px; }
+
+.charging-box {
+  padding: 0 15px;
+  margin-bottom: 10px; }
+  .charging-box .charging-info {
+    height: 120px;
+    border: 1px solid #eee; }
+    .charging-box .charging-info .chrarging-header {
+      height: 30px;
+      padding: 0 15px; }
+      .charging-box .charging-info .chrarging-header .bottom-line {
+        border-bottom: 1px solid #eee;
+        height: 30px;
+        line-height: 30px;
+        color: #999999; }
+    .charging-box .charging-info .charging-content {
+      padding: 0 15px; }
+      .charging-box .charging-info .charging-content .total {
+        height: 55px;
+        line-height: 55px;
+        color: #8dc932;
+        font-size: 23px; }
+      .charging-box .charging-info .charging-content .time {
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+        color: #999999; }

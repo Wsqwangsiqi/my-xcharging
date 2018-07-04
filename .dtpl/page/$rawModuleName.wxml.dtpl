@@ -1,0 +1,7 @@
+<!--
+  $rawModuleName 页面
+  Create at ${datetime}
+-->
+<view class="p-${rawModuleName}">
+  page: $rawModuleName
+</view>

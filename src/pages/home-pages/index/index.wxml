@@ -1,0 +1,38 @@
+<!-- index 页面
+  Create at 2018-06-29 14:34 -->
+<view class="p-index">
+  <user-header list="{{userList}}"></user-header>
+  <view class="box">
+    福清永华小区
+    <text class="gray-font">(FQ00222)</text>
+  </view>
+  <view class="box">
+    充电桩号
+    <text class="gray-font">(0222)</text>
+  </view>
+  <view class="phone-box">
+    <view class="phone-info">
+      <view class="title">服务热线</view>
+      <view class="icon">点击拨打</view>
+    </view>
+    <view bind:tap="call" data-phone="4003308888" class="call">400-330-8888</view>
+  </view>
+  <view class="chose-box">
+    <view class="header">选址充值方案</view>
+    <view class="item-box">
+      <view
+      bind:tap='choseType'
+      data-index="{{index}}"
+      data-price="{{item.price}}"
+      data-type="{{item.type}}"
+       wx:for="{{eleList}}" wx:key="{{item.price}}" class="item">
+        <view class="chose">
+          <view class="border-box {{index === activeIndex ? 'active' : ''}}">
+            <view class="price">{{item.price}}</view>
+            <view class="type">{{item.type}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

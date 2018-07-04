@@ -1,0 +1,55 @@
+{
+  "$schema": "https://raw.githubusercontent.com/qiu8310/minapp/master/schema/app.json",
+  "pages": [
+    /*
+      注意：
+        1. INJECT_START 到 INJECT_END 之间的文件是自动注入的，请不要随意修改
+        2. 注入规则写在 .dtpl 文件夹中的 dtpl.js 文件中
+        3. 需要安装 vscode 插件 dot-template-vscode 来达到注入功能
+        4. 触发条件是：每次在 src/pages 目录下新建一个空文件夹时
+    */
+    /*# INJECT_START {"key": "page"} #*/
+    "pages/home-pages/author/author",
+    "pages/home-pages/index/index",
+    "pages/code-pages/code/code",
+    "pages/user-pages/my/my",
+    "pages/user-pages/order-list/order-list",
+    "pages/user-pages/charging-record/charging-record",
+    "pages/home-pages/undone/undone",
+    "pages/user-pages/charging/charging",
+    "pages/user-pages/order-success/order-success",
+    "pages/user-pages/pay/pay",
+    /*# INJECT_END #*/
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "",
+    "selectedColor": "",
+    "backgroundColor": "",
+    "list": [
+      {
+        "pagePath": "pages/home-pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/index-1.png",
+        "selectedIconPath": "./images/index.png"
+      },
+      {
+        "pagePath": "pages/code-pages/code/code",
+        "text": "扫码",
+        "iconPath": "./images/code.png",
+        "selectedIconPath": "./images/code.png"
+      },
+      {
+        "pagePath": "pages/user-pages/my/my",
+        "text": "我的",
+        "iconPath": "./images/head.png",
+        "selectedIconPath": "./images/head.png"
+      }
+    ]
+  }
+}

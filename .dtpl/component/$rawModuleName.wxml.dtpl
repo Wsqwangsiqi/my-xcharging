@@ -1,0 +1,7 @@
+<!-- 
+  $rawModuleName 组件
+  Create at ${datetime}
+-->
+<view class="m-${rawModuleName}">
+  component: $rawModuleName
+</view>
